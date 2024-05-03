@@ -13,7 +13,7 @@
         <h1>Generate a<br><span>Random Password</span></h1>
         <div class="password-field">
             <input type="text" placeholder="Password" id="password" >
-            <i class="fa-regular fa-copy" onclick="copyPassword()"></i>
+            <i class="fa-regular fa-copy" onclick="copyPassword()" id="copyIcon"></i>
         </div>
         <button id="generate-btn" onclick="createPassword()"><i class="fa-solid fa-bolt"></i> Generate Password</button>
     </div>
@@ -45,6 +45,10 @@
     function copyPassword(){
         passwordBox.select();
         document.execCommand("copy");
+        document.getElementById("copyIcon").classList.add("clicked");
+        setTimeout(function() {
+            document.getElementById("copyIcon").classList.remove("clicked");
+        }, 300);
     }
 </script>
 </body>
