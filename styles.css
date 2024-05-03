@@ -6,7 +6,7 @@
 }
 
 body{
-    background:linear-gradient(90deg,  #19256d, #000000);
+    background:linear-gradient(180deg, #082570, #035346 );
     color: #fff;
 }
 
@@ -15,6 +15,7 @@ body{
     max-width: 500px;
     margin: 12rem;
     padding: 25px 40px;
+    background: transparent;
 }
 
 .container h1{
